@@ -1,0 +1,30 @@
+﻿* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0f1116; color: #dbe4f0; font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif; }
+#app { height: 100%; display: flex; flex-direction: column; }
+#topbar { height: 42px; flex: 0 0 42px; display: flex; align-items: center; gap: 10px; padding: 0 12px; background: #151b24; border-bottom: 1px solid #26303d; }
+.brand { font-size: 13px; font-weight: 600; color: #fb7299; letter-spacing: .4px; }
+.plugin-tabs { display: flex; align-items: center; gap: 4px; }
+.plugin-tab { border: 0; background: transparent; color: #9fb0c6; padding: 6px 10px; border-radius: 7px; font-size: 12px; cursor: pointer; }
+.plugin-tab.active { background: #243247; color: #eaf2ff; }
+.spacer { flex: 1; }
+.file-label { font-size: 12px; color: #8ea1b8; max-width: 38vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tb-btn { border: 1px solid #334154; background: #1a2330; color: #dbe4f0; border-radius: 7px; padding: 5px 11px; font-size: 12px; cursor: pointer; }
+.tb-btn:hover { border-color: #4d9fff; }
+#workspace { flex: 1; min-height: 0; display: flex; }
+#sidebar { width: 228px; flex: 0 0 228px; background: #111720; border-right: 1px solid #26303d; overflow: auto; padding: 10px 8px; }
+.side-title { font-size: 11px; color: #7d8ea5; padding: 2px 8px 8px; letter-spacing: .5px; }
+.file-list { display: flex; flex-direction: column; gap: 2px; }
+.file-row { border: 0; background: transparent; color: #aebed2; text-align: left; font-size: 12px; padding: 6px 8px; border-radius: 6px; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.file-row:hover { background: #1a2432; color: #e8f1ff; }
+.file-row.active { background: #20344d; color: #eaf2ff; }
+#main { flex: 1; min-width: 0; position: relative; display: flex; flex-direction: column; }
+#pluginFrame { flex: 1; width: 100%; border: 0; background: #0f1116; }
+.welcome { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #0f1116; z-index: 2; }
+.welcome-inner { text-align: center; }
+.welcome-title { font-size: 26px; font-weight: 600; color: #eaf2ff; margin-bottom: 10px; }
+.welcome-text { font-size: 13px; color: #8ea1b8; margin-bottom: 18px; }
+.welcome-actions { display: flex; gap: 10px; justify-content: center; }
+button.primary { border: 0; border-radius: 8px; padding: 8px 16px; font-size: 13px; cursor: pointer; background: #4d9fff; color: #fff; }
+button.primary.ghost { background: #243247; color: #dbe4f0; }
+.statusbar { height: 24px; flex: 0 0 24px; padding: 0 12px; display: flex; align-items: center; font-size: 11px; color: #8ea1b8; background: #121821; border-top: 1px solid #26303d; }
+#sidebar[hidden], #pluginFrame[hidden], #welcome[hidden] { display: none; }

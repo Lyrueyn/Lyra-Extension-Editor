@@ -1,0 +1,22 @@
+﻿{
+  "id": "editor",
+  "name": "编辑器",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "description": "通用编辑器宿主。安装后生成「编辑器」Tab；HTML 编辑器等 editor-plugin 扩展作为插件加载。",
+  "kind": "editor",
+  "fileTypes": [],
+  "library": {
+    "sidebar": true,
+    "navLabel": "编辑器",
+    "glyph": "E70F",
+    "title": "编辑器",
+    "description": "编辑器宿主；插件式加载 HTML 编辑器等编辑器扩展。",
+    "openLabel": "",
+    "addLabel": "",
+    "authorFallback": "Editor",
+    "cover": "none",
+    "order": 30,
+    "metadata": ""
+  }
+}

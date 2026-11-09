@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>编辑器</title>
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand">编辑器</div>
+    <div id="pluginTabs" class="plugin-tabs"></div>
+    <div class="spacer"></div>
+    <div id="fileLabel" class="file-label"></div>
+    <button id="openFileBtn" class="tb-btn" type="button">打开文件</button>
+    <button id="openFolderBtn" class="tb-btn" type="button">打开项目</button>
+  </header>
+  <div id="workspace">
+    <aside id="sidebar" hidden>
+      <div class="side-title">项目文件</div>
+      <div id="fileList" class="file-list"></div>
+    </aside>
+    <main id="main">
+      <div id="welcome" class="welcome">
+        <div class="welcome-inner">
+          <div class="welcome-title">编辑器</div>
+          <div id="welcomeText" class="welcome-text">打开一个 HTML 文件，或打开整个项目文件夹。</div>
+          <div class="welcome-actions">
+            <button id="welcomeFileBtn" class="primary" type="button">打开文件</button>
+            <button id="welcomeFolderBtn" class="primary ghost" type="button">打开项目</button>
+          </div>
+        </div>
+      </div>
+      <iframe id="pluginFrame" title="编辑器插件" allow="autoplay" hidden></iframe>
+      <div id="statusbar" class="statusbar"></div>
+    </main>
+  </div>
+</div>
+<script src="editor.js"></script>
+</body>
+</html>
