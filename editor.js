@@ -67,7 +67,7 @@
   function pluginUrl(p) {
     const entry = (p.entry || "index.html").replace(/^\/+/, "");
     return EXT_ORIGIN + "/" + encodeURIComponent(p.id) + "/" + entry +
-      "?embedded=1&v=300&extensionsOrigin=" + encodeURIComponent(EXT_ORIGIN);
+      "?embedded=1&v=301&extensionsOrigin=" + encodeURIComponent(EXT_ORIGIN);
   }
 
   function renderPluginTabs() {

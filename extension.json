@@ -1,7 +1,7 @@
 {
   "id": "editor",
   "name": "编辑器",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "entry": "index.html",
   "description": "编辑器项目库扩展。安装后记录 HTML 项目；点击项目在独立窗口中打开，由 HTML 阅读器 + HTML 编辑器插件联动完成阅读/编辑。",
   "kind": "editor",
