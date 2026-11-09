@@ -1,20 +1,25 @@
-﻿{
+{
   "id": "editor",
   "name": "编辑器",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "entry": "index.html",
-  "description": "通用编辑器宿主。安装后生成「编辑器」Tab；HTML 编辑器等 editor-plugin 扩展作为插件加载。",
+  "description": "编辑器项目库扩展。安装后记录 HTML 项目；点击项目在独立窗口中打开，由 HTML 阅读器 + HTML 编辑器插件联动完成阅读/编辑。",
   "kind": "editor",
   "fileTypes": [],
+  "requires": [
+    "html-reader"
+  ],
   "library": {
     "sidebar": true,
     "navLabel": "编辑器",
     "glyph": "E70F",
     "title": "编辑器",
-    "description": "编辑器宿主；插件式加载 HTML 编辑器等编辑器扩展。",
-    "openLabel": "",
-    "addLabel": "",
-    "authorFallback": "Editor",
+    "description": "记录要编辑的 HTML 项目；点项目在独立窗口打开，进入编辑模式。需要 HTML 阅读器与 HTML 编辑器插件。",
+    "openLabel": "打开项目",
+    "addLabel": "＋ 导入项目",
+    "newLabel": "＋ 新建项目",
+    "projectMode": true,
+    "authorFallback": "本地 HTML",
     "cover": "none",
     "order": 30,
     "metadata": ""
